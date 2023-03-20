@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=PT+Serif&family=Climate+Crisis&family=Ubuntu');
+
+$background: 	#e9d2ff;
+$boxes: #cae4ba;
+$editorL: #444444;
+$previewL: #0A0708;
+$toolbar: #cfa9f5;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inconsolata', 'PT Serif', sans-serif, 'Climate Crisis';
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  background: $background;
+  margin: 10px 0;
+}
+
+.projectName {
+  font-size: 1.70em;
+  text-align: center;
+  font-family: 'Inconsolata'
+}
+
+.created {
+  font-family: 'Climate Crisis', cursive;
+  text-align: center;
+  font-size: 0.75em;
+  color: $previewL;
+  margin-bottom: 40px;
+}
+
+.created a {
+  text-decoration: none;
+  color: $editorL;
+}
+
+#toolbar {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 10px 2px;
+  font-family: 'Inconsolata';
+  padding: 0.3rem;
+  font-weight: bold;
+  background-color: $toolbar;
+  max-width: 594px;
+}
+
+#editorbox {
+  margin: auto;
+  max-width: 600px;
+}
+
+#previewbox {
+  max-width: 596px;
+  margin: auto;
+  min-height: 200px;
+  overflow-wrap: break-word;
+  font-family: 'Ubuntu';
+}
+
+#preview img {
+  max-width: 80px;
+}
+
+
+.inputbox {
+  resize: vertical;
+  background-color: $boxes;
+  color: $editorL;
+  font-size: 0.9em;
+  margin: auto auto 20px;
+  align-items: center;
+  box-shadow: 1px 1px 10px 2px;
+  width: 99%;
+  min-height: 200px;
+  border-bottom: none;
+  padding-left: 5px;
+  padding-top: 2px;
+  outline: none;
+} 
+
+#editor.inputbox {
+  font-family: 'PT Serif';
+}
